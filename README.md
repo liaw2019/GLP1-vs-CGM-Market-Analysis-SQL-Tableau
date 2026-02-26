@@ -12,13 +12,13 @@ This project analyzes a pivotal shift in the U.S. healthcare market: the explosi
 Using CMS Open Data (2016-2023), this study tracks how spending has transitioned from traditional blood glucose monitoring (fingersticks) toward high-cost continuous glucose monitoring (CGM) devices in alignment with the increased adoption of GLP-1 therapeutics.
 
 ### Key Business Insights:
-- The $9B Surge: GLP-1 spending (led by Ozempic and Trulicity) has scaled exponentially, reflecting a massive therapeutic expansion into cardiovascular and obesity-related benefits.
-- Hardware Convergence: While traditional glucose monitoring is declining, "Modern CGM" utilization is rising, showing a strategic synergy between drug therapy and real-time data monitoring.
-- Geographic Variance: Regional adoption shows significant "hotspots" in the Southeast and Northeast, identifying areas with higher-than-average market penetration and potential clinical need.
+- **The $9B Surge**: GLP-1 spending (led by Ozempic and Trulicity) has scaled exponentially, reflecting a massive therapeutic expansion into cardiovascular and obesity-related benefits.
+- **Hardware Convergence**: While traditional glucose monitoring is declining, "Modern CGM" utilization is rising, showing a strategic synergy between drug therapy and real-time data monitoring.
+- **Geographic Variance**: Regional adoption shows significant "hotspots" in the Southeast and Northeast, identifying areas with higher-than-average market penetration and potential clinical need.
 
 ### Technical Highlights:
-- Data Normalization: Utilized Total Standardized Spending to eliminate geographic payment variations, ensuring an "apples-to-apples" longitudinal comparison.
-- Complex Data Joining: Aggregated and joined multi-year CMS Part D (Prescription) and DMEPOS (Device) datasets using SQL to create a unified view of the patient landscape.
-- Executive Visualization: Developed a dual-track Tableau dashboard designed for executive decision-makers, emphasizing "Market Maturity" and "Convergence" over raw data tables.
+- **Data Normalization**: Utilized Total Standardized Spending to eliminate geographic payment variations, ensuring an "apples-to-apples" longitudinal comparison.
+- **Complex Data Joining**: Aggregated and joined multi-year CMS Part D (Prescription) and DMEPOS (Device) datasets using SQL to create a unified view of the patient landscape.
+- **Executive Visualization**: Developed a dual-track Tableau dashboard designed for executive decision-makers, emphasizing "Market Maturity" and "Convergence" over raw data tables.
 
 **License**: This project is licensed under the MIT License

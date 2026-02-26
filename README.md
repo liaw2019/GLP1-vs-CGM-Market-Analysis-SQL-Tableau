@@ -18,9 +18,7 @@ Using CMS Open Data (2016-2023), this study tracks how spending has transitioned
 
 ### Technical Highlights:
 - Data Normalization: Utilized Total Standardized Spending to eliminate geographic payment variations, ensuring an "apples-to-apples" longitudinal comparison.
-
 - Complex Data Joining: Aggregated and joined multi-year CMS Part D (Prescription) and DMEPOS (Device) datasets using SQL to create a unified view of the patient landscape.
-
 - Executive Visualization: Developed a dual-track Tableau dashboard designed for executive decision-makers, emphasizing "Market Maturity" and "Convergence" over raw data tables.
 
 **License**: This project is licensed under the MIT License

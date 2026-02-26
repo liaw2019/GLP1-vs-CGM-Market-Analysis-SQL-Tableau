@@ -2,7 +2,7 @@
 An end-to-end SQL &amp; Tableau analysis of Medicare Part D and DMEPOS datasets, visualizing the shift in diabetes care from traditional hardware to Continuous Glucose Monitoring (CGM) devices in alignment with the increased adoption of GLP-1 therapeutics (2016-2023)
 
 # The Modern Diabetes Landscape: GLP-1 vs CGM Market Analysis
-Tools: SQL | Tableau | CMS Open Data (Part D & DMEPOS)
+**Tools**: SQL | Tableau | CMS Open Data (Part D & DMEPOS)
 
 An end-to-end SQL &amp; Tableau analysis of Medicare Part D and DMEPOS datasets, visualizing the shift in diabetes care from traditional hardware to Continuous Glucose Monitoring (CGM) devices in alignment with adoption of GLP-1 therapeutics (2016-2023)
 

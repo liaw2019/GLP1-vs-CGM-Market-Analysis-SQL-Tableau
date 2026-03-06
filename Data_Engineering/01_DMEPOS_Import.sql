@@ -1,3 +1,6 @@
+-- ============================================
+-- DMEPOS DIABETES DEVICE ANALYSIS
+-- ============================================
 -- 1. Create the database
 CREATE DATABASE diabetes_proj_db;
 
@@ -56,7 +59,6 @@ SET SQL_SAFE_UPDATES = 0; -- without WHERE clause and safe updates off it will t
 UPDATE medicare_dme_devices_supplies_by_supplier_and_service_2023 
 SET data_year = 2023;
 SET SQL_SAFE_UPDATES = 1;
-
 
 -- FILE 2016
 LOAD DATA LOCAL INFILE  'C:/Users/81707/Documents/005 personal project/Diabetes GLP project/Datasets/DMEPOS device data/Medicare_DME_Devices_Supplies_by_Supplier_and_Service_2016/Medicare_DME_Devices_Supplies_by_Supplier_and_Service_2016.csv'
@@ -331,7 +333,9 @@ Avg_Suplr_Mdcr_Pymt_Amt,
 Avg_Suplr_Mdcr_Stdzd_Amt)
 SET data_year = 2022;
 
--- ##################  CREATE View   ##############################
+-- ============================================
+-- ANALYSIS VIEW: Diabetes Devices Only
+-- ============================================
 CREATE OR REPLACE VIEW dmepos_diabetes_analysis_view AS
 SELECT 
     -- Basic Identifiers
@@ -367,7 +371,6 @@ SELECT
     
     -- Total allowed amount = average allowed amount * total services
 	  -- avg allowed amount = what Medicare actually agreed to pay for one unit of that code; total services = total no. of units provided
-    -- Helpful Categories for Tableau (Handy for color-coding!)
     CASE 
         WHEN HCPCS_Cd IN ('E2103', 'E2102', 'A4239', 'A4238', 'K0553', 'K0554') THEN 'Modern CGM' -- eg. Dexcom G6, FreeStyle Libre
         WHEN HCPCS_Cd IN ('E0784', 'A9274','A4224', 'A4225') THEN 'Insulin Pumps'
@@ -395,12 +398,12 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 FROM dmepos_diabetes_analysis_view;
 
-
-
+-- Analysis note
 -- Which code to focus: 
 -- A4239 (monthly sensors/ transmitters), E2103 initiation of new CGM therapy
 -- High-Tech CGMs: Codes like E2103 and A4239 are the "modern" way to manage diabetes. You want to see if these are rising alongside GLP-1 drugs.
 -- Traditional Supplies: A4253 (Test Strips) and A4259 (Lancets) are the "old school" finger-prick method. Your hypothesis is that as GLP-1s and CGMs rise, these manual supplies should drop
+
 -- CGM Equipment (The Hardware)
 -- - E2103: Non-adjunctive CGM receiver (used to make treatment decisions without a fingerstick).
 -- - E2102: Adjunctive CGM receiver (requires a fingerstick to confirm readings before taking action).
@@ -412,6 +415,9 @@ FROM dmepos_diabetes_analysis_view;
 -- - A4238: Supply allowance for an adjunctive CGM.
 -- - K0553: Supply allowance for a therapeutic CGM system (older code).
 
+-- ============================================
+-- AGGREGATED VIEW: For Tableau Dashboards
+-- ============================================
 CREATE VIEW dmepos_diabetes_analysis_view_aggregated AS
 SELECT data_year, tech_category, SUM(Total_Beneficiaries), sum(Total_Claims), sum(total_standardized_spending)
 FROM dmepos_diabetes_analysis_view

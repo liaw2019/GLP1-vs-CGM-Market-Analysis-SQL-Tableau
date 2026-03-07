@@ -1,13 +1,10 @@
-# GLP1-vs-CGM-Market-Analysis-SQL-Tableau
-An end-to-end SQL &amp; Tableau analysis of Medicare Part D and DMEPOS datasets, visualizing the shift in diabetes care from traditional hardware to Continuous Glucose Monitoring (CGM) devices in alignment with the increased adoption of GLP-1 therapeutics (2016-2023)
-
 # The Modern Diabetes Landscape: GLP-1 vs CGM Market Analysis
 **Tools**: SQL | Tableau | CMS Open Data (Part D & DMEPOS)
 
-An end-to-end SQL &amp; Tableau analysis of Medicare Part D and DMEPOS datasets, visualizing the shift in diabetes care from traditional hardware to Continuous Glucose Monitoring (CGM) devices in alignment with adoption of GLP-1 therapeutics (2016-2023)
+**An end-to-end SQL &amp; Tableau analysis  tracking the shift from traditional blood glucose monitoring to continuous glucose monitoring (CGM) devices alongside GLP-1 medication adoption**
 
 ## Project Overview: The Modern Diabetes Landscape
-This project analyzes a pivotal shift in the U.S. healthcare market: the explosive growth of GLP-1 receptor agonists and the simultaneous evolution of Continuous Glucose Monitoring (CGM) technology within the Medicare population.
+This project analyzes changes in diabetes care within the Medicare population using CMS public datasets (2016-2023). The analysis examines two parallel trends: the rapid growth of GLP-1 medications (like Ozempic and Trulicity) and the adoption of continuous glucose monitoring (CGM) devices.
 
 Using CMS Open Data (2016-2023), this study tracks how spending has transitioned from traditional blood glucose monitoring (fingersticks) toward high-cost continuous glucose monitoring (CGM) devices in alignment with the increased adoption of GLP-1 therapeutics.
 
@@ -17,8 +14,13 @@ Using CMS Open Data (2016-2023), this study tracks how spending has transitioned
 - **Geographic Variance**: Regional adoption shows significant "hotspots" in the Southeast and Northeast, identifying areas with higher-than-average market penetration and potential clinical need.
 
 ### Technical Highlights:
-- **Data Normalization**: Utilized Total Standardized Spending to eliminate geographic payment variations, ensuring an "apples-to-apples" longitudinal comparison.
-- **Complex Data Joining**: Aggregated and joined multi-year CMS Part D (Prescription) and DMEPOS (Device) datasets using SQL to create a unified view of the patient landscape.
-- **Executive Visualization**: Developed a dual-track Tableau dashboard designed for executive decision-makers, emphasizing "Market Maturity" and "Convergence" over raw data tables.
+- **Data Integration**: Merged multi-year Medicare Part D drug spending, DMEPOS device claims, and NHANES population health data using R and SQL.
+- **Standardization**: Applied CMS standardized payment amounts to account for geographic cost differences and enable year-over-year comparisons.
+- **Visualization**: Built Tableau dashboards showing spending trends, beneficiary counts, and geographic distribution for stakeholder analysis.
+
+### Data Sources:
+- Medicare Part D Prescription Drug Spending (2014-2023)
+- Medicare DMEPOS Device Claims (2016-2023)
+- CDC NHANES Survey Data (2017-2023)
 
 **License**: This project is licensed under the MIT License

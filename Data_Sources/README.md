@@ -48,7 +48,7 @@
 **Method 1 (manual download):** https://wwwn.cdc.gov/nchs/nhanes/
 
 **Method 2 (import datasets using R):** Used `nhanesA` R package for programmatic data retrieval
-- **Benefits:** Automated downloads, consistent variable naming across cycles, no manual SAS file conversion
+- **Benefits:** Automated downloads, survey weight handling
 - **Script:** `Diabetes_NHANES_data_processing.R`
 - **Reference:** [nhanesA Survey Weights Vignette](https://cran.r-project.org/web/packages/nhanesA/vignettes/UsingSurveyWeights.html)
 

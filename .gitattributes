@@ -1,0 +1,5 @@
+# Ignore the specific file that is causing the R label
+https://github.com/liaw2019/GLP1-vs-CGM-Market-Analysis-SQL-Tableau/blob/main/Data_Sources/Diabetes_NHANES_data_processing.R linguist-vendored
+
+# Force the repo to focus on SQL
+*.sql linguist-language=SQL

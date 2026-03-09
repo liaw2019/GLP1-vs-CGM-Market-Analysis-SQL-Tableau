@@ -12,8 +12,10 @@ Using CMS Open Data (2016-2023), this study tracks how spending has transitioned
 
 ### Key Business Insights:
 - **The $9B Surge**: GLP-1 spending (led by Ozempic and Trulicity) has scaled exponentially, reflecting a massive therapeutic expansion into cardiovascular and obesity-related benefits.
-- **Hardware Convergence**: While traditional glucose monitoring is declining, "Modern CGM" utilization is rising, showing a strategic synergy between drug therapy and real-time data monitoring.
-- **Geographic Variance**: Regional adoption shows significant "hotspots" in the Southeast and Northeast, identifying areas with higher-than-average market penetration and potential clinical need.
+- **Synergistic Growth Correlation**: GLP-1 spending and CGM spending exhibit a strong positive correlation, signaling a shift toward "dual-modality" metabolic management, where pharmaceutical therapy and real-time digital monitoring are increasingly used in tandem.
+- **Market Maturity & "White Space" Opportunity**: A rising per-beneficiary spending despite a decline in total beneficiary counts might sugest a structural shift toward more sophisticated, premium-tier technologies, , potentially reflecting a shift in the patient mix toward those requiring more comprehensive metabolic management.
+ 
+With CGM spending currently accounting for less than 3% of GLP-1 expenditure, this segment represents significant untapped "white space" for further integration as real-time metabolic monitoring becomes standard practice alongside GLP-1 therapy.
 
 ### Technical Highlights:
 - **Data Integration**: Merged multi-year Medicare Part D drug spending, DMEPOS device claims, and NHANES population health data using R and SQL.

@@ -42,6 +42,7 @@
 ---
 
 ## 3. CDC NHANES - Population Health & Demographics
+Note: The NHANES dataset was evaluated for inclusion but ultimately excluded to maintain narrative coherence
 
 **Description:** National Health and Nutrition Examination Survey (NHANES), a nationwide survey combining interviews and physical examinations/lab tests.
 

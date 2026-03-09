@@ -3,6 +3,8 @@
 
 **An end-to-end SQL &amp; Tableau analysis  tracking the shift from traditional blood glucose monitoring to continuous glucose monitoring (CGM) devices alongside GLP-1 medication adoption**
 
+[Tableau public link](https://public.tableau.com/views/DiabetesGLPproject/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 ## Project Overview: The Modern Diabetes Landscape
 This project analyzes changes in diabetes care within the Medicare population using CMS public datasets (2016-2023). The analysis examines two parallel trends: the rapid growth of GLP-1 medications (like Ozempic and Trulicity) and the adoption of continuous glucose monitoring (CGM) devices.
 

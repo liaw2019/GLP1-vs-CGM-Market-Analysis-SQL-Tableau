@@ -1,5 +1,5 @@
 # The Modern Diabetes Landscape: GLP-1 vs CGM Market Analysis
-**Tools**: SQL | Tableau | CMS Open Data (Part D & DMEPOS)
+**Tools**: SQL | Tableau | R
 
 **An end-to-end SQL &amp; Tableau analysis  tracking the shift from traditional blood glucose monitoring to continuous glucose monitoring (CGM) devices alongside GLP-1 medication adoption**
 

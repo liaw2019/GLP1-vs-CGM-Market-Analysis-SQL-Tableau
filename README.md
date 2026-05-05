@@ -11,7 +11,7 @@ This project analyzes changes in diabetes care within the Medicare population us
 Using CMS Open Data (2016-2023), this study tracks how spending has transitioned from traditional blood glucose monitoring (fingersticks) toward high-cost continuous glucose monitoring (CGM) devices in alignment with the increased adoption of GLP-1 therapeutics.
 
 ### Strategic Observation: GLP-1 & CGM Convergent Ecosystem
-- **Drivers of Therapeutic Expansio**: The rapid acceleration in GLP-1 expenditure through 2023 reflects increased patient volume, driven by the expansion of FDA-approved indications for Type 2 diabetes management and widespread adoption across diverse patient cohorts.
+- **Drivers of Therapeutic Expansion**: The rapid acceleration in GLP-1 expenditure through 2023 reflects increased patient volume, driven by the expansion of FDA-approved indications for Type 2 diabetes management and widespread adoption across diverse patient cohorts.
 - **Synergistic Growth Correlation**: GLP-1 spending and CGM spending exhibit a strong positive correlation, signaling a shift toward "dual-modality" metabolic management, where pharmaceutical therapy and real-time digital monitoring are increasingly used in tandem.
 - **Market Maturity & "White Space" Opportunity**: A rising per-beneficiary spending despite a decline in total beneficiary counts might sugest a structural shift toward more sophisticated, premium-tier technologies, potentially reflecting a shift in the patient mix toward those requiring more comprehensive metabolic management.
  
